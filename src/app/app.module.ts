@@ -3,12 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+// Custom directive classes
+import {HoverColor} from "./custom-directives/MyDirective.directive";
+
+// FormsModule
+import {FormsModule} from "@angular/forms";
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HoverColor
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
